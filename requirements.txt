@@ -1,5 +1,4 @@
 beautifulsoup4==4.5.3
-EbookLib==0.16
-lxml==3.8.0
+EbookLib==0.17
 newspaper3k==0.1.9
 Pillow==4.2.1

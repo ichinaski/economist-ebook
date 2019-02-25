@@ -82,7 +82,7 @@ class Article:
         a = soup.find('article', class_='blog-post')
 
         article = newspaper.Article(self.url)
-        article.download(html=str(a))
+        article.download(input_html=str(a))
         article.parse()
 
         # Header
@@ -129,7 +129,7 @@ class Section:
 
 class Economist:
     base_url = 'http://www.economist.com'
-    print_edition = '{}/printedition/'.format(base_url)
+    print_edition = '{}/printedition'.format(base_url)
     author = 'The Economist'
     language = 'en'
 
@@ -280,4 +280,5 @@ def download_image(image_url, max_width=400):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.DEBUG)
     Economist().build()

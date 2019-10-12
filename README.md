@@ -5,7 +5,7 @@ This little script downloads and parses the weekly print edition from The Econom
 
 ### Install
 
-You need Python3. Assuming you are in a `virtualenv`, use `python`, and `pip` in the following commands. Replace them with `python3` and `pip3` if your system-wide Python installation is 2.X.
+You need python3. Assuming you are in a `virtualenv`, use `python`, and `pip` in the following commands. Replace them with `python3` and `pip3` if your system-wide Python installation is 2.X.
 
 NOTE: You will still most likely need to install the following libraries via your package manager:
 
@@ -26,7 +26,7 @@ This will fetch the latest print edition and build the ebook. Upon feching the i
 
 The resulting `epub` will be placed in the same directory, named `the_economist_YYYY-MM-DD.epub`, where `YYYY-MM-DD` represents the issue date.
 
-The articles are cached in a SQLite database, which is meant to limit the number of requests made to The Economist.
+The articles are cached in a SQLite database, which is meant to limit the number of requests made to [The Economist](https://www.economist.com).
 
 ### License
 
